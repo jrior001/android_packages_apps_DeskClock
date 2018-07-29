@@ -24,10 +24,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
 
-import com.android.deskclock.DeskClock;
-import com.android.deskclock.R;
-import com.android.deskclock.Utils;
-import com.android.deskclock.data.DataModel;
+import com.android.watchclock.WatchClock;
+import com.android.watchclock.R;
+import com.android.watchclock.Utils;
+import com.android.watchclock.data.DataModel;
 
 /**
  * Simple widget to show an analog clock.
@@ -64,7 +64,7 @@ public class AnalogAppWidgetProvider extends AppWidgetProvider {
 
             // Tapping on the widget opens the app (if not on the lock screen).
             if (Utils.isWidgetClickable(wm, widgetId)) {
-                final Intent openApp = new Intent(context, DeskClock.class);
+                final Intent openApp = new Intent(context, WatchClock.class);
                 final PendingIntent pi = PendingIntent.getActivity(context, 0, openApp, 0);
                 widget.setOnClickPendingIntent(R.id.analog_appwidget, pi);
             }

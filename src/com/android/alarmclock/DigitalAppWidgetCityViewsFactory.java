@@ -25,11 +25,11 @@ import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService.RemoteViewsFactory;
 
-import com.android.deskclock.LogUtils;
-import com.android.deskclock.R;
-import com.android.deskclock.Utils;
-import com.android.deskclock.data.City;
-import com.android.deskclock.data.DataModel;
+import com.android.watchclock.LogUtils;
+import com.android.watchclock.R;
+import com.android.watchclock.Utils;
+import com.android.watchclock.data.City;
+import com.android.watchclock.data.DataModel;
 
 import java.util.ArrayList;
 import java.util.Calendar;

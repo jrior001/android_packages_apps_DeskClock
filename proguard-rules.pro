@@ -30,4 +30,4 @@
     public <init>(android.content.Context);
 }
 
--keep public class com.android.deskclock.settings.ScreensaverSettingsActivity$PrefsFragment
+-keep public class com.android.watchclock.settings.ScreensaverSettingsActivity$PrefsFragment

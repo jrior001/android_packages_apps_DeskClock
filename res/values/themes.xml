@@ -17,7 +17,7 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.DeskClock" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.WatchClock" parent="Theme.AppCompat.NoActionBar">
         <item name="android:colorBackgroundFloating" tools:targetApi="23">
             ?attr/colorBackgroundFloating
         </item>
@@ -37,7 +37,7 @@
         <item name="popupTheme">@style/ThemeOverlay.Popup</item>
     </style>
 
-    <style name="Theme.DeskClock.Settings">
+    <style name="Theme.WatchClock.Settings">
         <!-- Attributes from android.support.v7.appcompat -->
         <item name="actionBarStyle">@style/Widget.ActionBar</item>
         <item name="colorControlActivated">?attr/colorAccent</item>
@@ -48,14 +48,14 @@
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
     </style>
 
-    <style name="Theme.DeskClock.RingtonePicker">
+    <style name="Theme.WatchClock.RingtonePicker">
         <!-- Attributes from android.support.v7.appcompat -->
         <item name="actionBarStyle">@style/Widget.ActionBar</item>
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
     </style>
 
-    <style name="Theme.DeskClock.CitySelection">
+    <style name="Theme.WatchClock.CitySelection">
         <!-- Attributes from android.support.v7.appcompat -->
         <item name="actionBarStyle">@style/Widget.ActionBar.NoTitle</item>
         <item name="windowActionBar">true</item>

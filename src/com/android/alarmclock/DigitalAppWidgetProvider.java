@@ -38,14 +38,14 @@ import android.widget.RemoteViews;
 import android.widget.TextClock;
 import android.widget.TextView;
 
-import com.android.deskclock.DeskClock;
-import com.android.deskclock.LogUtils;
-import com.android.deskclock.R;
-import com.android.deskclock.Utils;
-import com.android.deskclock.data.City;
-import com.android.deskclock.data.DataModel;
-import com.android.deskclock.uidata.UiDataModel;
-import com.android.deskclock.worldclock.CitySelectionActivity;
+import com.android.watchclock.WatchClock;
+import com.android.watchclock.LogUtils;
+import com.android.watchclock.R;
+import com.android.watchclock.Utils;
+import com.android.watchclock.data.City;
+import com.android.watchclock.data.DataModel;
+import com.android.watchclock.uidata.UiDataModel;
+import com.android.watchclock.worldclock.CitySelectionActivity;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -70,8 +70,8 @@ import static android.util.TypedValue.COMPLEX_UNIT_PX;
 import static android.view.View.GONE;
 import static android.view.View.MeasureSpec.UNSPECIFIED;
 import static android.view.View.VISIBLE;
-import static com.android.deskclock.alarms.AlarmStateManager.ACTION_ALARM_CHANGED;
-import static com.android.deskclock.data.DataModel.ACTION_WORLD_CITIES_CHANGED;
+import static com.android.watchclock.alarms.AlarmStateManager.ACTION_ALARM_CHANGED;
+import static com.android.watchclock.data.DataModel.ACTION_WORLD_CITIES_CHANGED;
 import static java.lang.Math.max;
 import static java.lang.Math.round;
 
@@ -103,7 +103,7 @@ public class DigitalAppWidgetProvider extends AppWidgetProvider {
      * the default TimeZone changes days. This affects the widget display because the day-of-week is
      * only visible when the world city day-of-week differs from the default TimeZone's day-of-week.
      */
-    private static final String ACTION_ON_DAY_CHANGE = "com.android.deskclock.ON_DAY_CHANGE";
+    private static final String ACTION_ON_DAY_CHANGE = "com.android.watchclock.ON_DAY_CHANGE";
 
     /** Intent used to deliver the {@link #ACTION_ON_DAY_CHANGE} callback. */
     private static final Intent DAY_CHANGE_INTENT = new Intent(ACTION_ON_DAY_CHANGE);
@@ -209,7 +209,7 @@ public class DigitalAppWidgetProvider extends AppWidgetProvider {
 
         // Tapping on the widget opens the app (if not on the lock screen).
         if (Utils.isWidgetClickable(wm, widgetId)) {
-            final Intent openApp = new Intent(context, DeskClock.class);
+            final Intent openApp = new Intent(context, WatchClock.class);
             final PendingIntent pi = PendingIntent.getActivity(context, 0, openApp, 0);
             rv.setOnClickPendingIntent(R.id.digital_widget, pi);
         }

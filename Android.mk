@@ -1,12 +1,12 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_RESOURCE_DIR := packages/apps/DeskClock/res
+LOCAL_RESOURCE_DIR := packages/apps/WatchClock/res
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_SDK_VERSION := current
 
-LOCAL_PACKAGE_NAME := DeskClock
+LOCAL_PACKAGE_NAME := WatchClock
 LOCAL_OVERRIDES_PACKAGES := AlarmClock
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src gen)
